@@ -1,0 +1,234 @@
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+
+    background-color: rgba(238, 219, 219, 0.85); 
+    /* 🔥 أبيض شفاف يخليه واضح وفخم */
+
+    backdrop-filter: blur(10px); 
+    /* ✨ يعطي تأثير زجاجي جميل */
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+/* ===== LOGO STYLE ===== */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* إذا اللوجو دائري */
+    object-fit: cover;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #C6A75E;
+}
+
+.hero-logo {
+    width: 200px;
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #C6A75E;
+}
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: #C6A75E;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+/* ===== COLLECTIONS SECTION ===== */
+.collections {
+    min-height: 100vh;   /* 🔥 يخلي القسم ياخد شاشة كاملة */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;      /* الصورة تغطي الشاشة */
+    background-position: center;  /* تتركز بالنص */
+    background-repeat: no-repeat; /* ❌ يمنع التكرار */
+    
+    position: relative;
+    color: white;
+}
+
+.collections h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #C6A75E;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* ===== CARD DESIGN ===== */
+.card {
+    background-color: white;   /* 🔥 يخلي الكرت واضح */
+    color: #333;               /* 🔥 يخلي النص غامق وواضح */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 2;                /* 🔥 يخليه فوق الخلفية */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #C6A75E;
+    color: white;
+    text-align: center;
+    padding: 30px 8%;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #C6A75E;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.about-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+
+/* ===== CONTACT PAGE ===== */
+
+.contact-section {
+    min-height: 100vh;
+    padding: 150px 8% 80px; /* مهم بسبب navbar */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #C6A75E;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    background-color: #C6A75E;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #a88745;
+}

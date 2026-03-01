@@ -1,0 +1,34 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    background: url("../images/background.jpg") center/cover no-repeat fixed;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #C6A75E; /* ذهبي */
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a88745;
+    transform: translateY(-3px);
+}
