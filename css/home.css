@@ -188,47 +188,40 @@ position: relative;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
+@media (max-width: 768px) {
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* ===== CONTACT PAGE ===== */
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
 
-.contact-section {
-    min-height: 100vh;
-    padding: 150px 8% 80px; /* مهم بسبب navbar */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.featured-product {
     text-align: center;
+    margin: 40px 0;
 }
 
-.contact-section h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #C6A75E;
+.featured-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.contact-form {
-    max-width: 500px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.featured-caption {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.contact-form button {
-    padding: 12px;
-    border: none;
-    background-color: #C6A75E;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #a88745;
-}
