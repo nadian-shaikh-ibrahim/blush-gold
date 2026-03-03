@@ -33,3 +33,17 @@ a {
     background-color: #a88745;
     transform: translateY(-3px);
 }
+
+.background-blur {
+    position: fixed;
+    inset: 0;
+    background: url("../images/background.jpg") center/cover no-repeat;
+    filter: blur(6px);
+    z-index: -1;
+}
+.background-blur::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
